@@ -1,0 +1,61 @@
+.warp{
+
+    width: 100%;
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+
+
+.Logo-area{    
+    width: 1080px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 20px 0px;
+
+}
+
+body {
+    background-color: #e8e8e8;
+}
+
+.bg-block{
+    width: 1080px;
+    height: 2000px;
+    background-color: #e8e8e8;
+    margin: auto;
+}
+
+.card-1{
+    background-image: url(Source/Attraction-1.png);
+    background-repeat: no-repeat;
+    width: 460px;
+    height: 460px;
+    background-color: #ffffff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.Pending{
+    background-image: url(Source/Attraction-Pending.png);
+    background-repeat: no-repeat;
+    width: 460px;
+    height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.column-1{
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
