@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edan_playground</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="warp">
@@ -15,20 +16,6 @@
            <div class="column-1">
             <div class="card-1">
                 <canvas id="Rive_001" width="300" height="300"></canvas>
-
-                <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
-                <script>
-                const r = new rive.Rive({
-                    src: "riv/double-tap.riv",
-                    canvas: document.getElementById("Rive_001"),
-                    autoplay: true,
-                    stateMachines: "State Machine 1",
-                    onLoad: () => {
-                      r.resizeDrawingSurfaceToCanvas();
-                    },
-                });
-                </script>
-    
             </div>
             
             <div class="Pending">
@@ -38,25 +25,20 @@
         
            </div>
     
+           <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
+           <script>
+           const r = new rive.Rive({
+               src: "riv/double-tap.riv",
+               canvas: document.getElementById("Rive_001"),
+               autoplay: true,
+               stateMachines: "State Machine 1",
+               onLoad: () => {
+                 r.resizeDrawingSurfaceToCanvas();
+               },
+           });
+           </script>
+
         </div>
-
-    </div>
-
-    <div class="testtest">
-        <canvas id="rive_test" width="300" height="300"></canvas>
-
-        <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
-        <script>
-        const a = new rive.Rive({
-            src: "riv/double-tap.riv",
-            canvas: document.getElementById("rive_test"),
-            autoplay: true,
-            stateMachines: "State Machine 1",
-            onLoad: () => {
-              r.resizeDrawingSurfaceToCanvas();
-            },
-        });
-        </script>
 
     </div>
 </body>
