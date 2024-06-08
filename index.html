@@ -42,6 +42,15 @@ const r = new rive.Rive({
       r.resizeDrawingSurfaceToCanvas();
     },
 });
+
+window.addEventListener(
+  "resize",
+  () => {
+    riveInstance.resizeDrawingSurfaceToCanvas();
+  },
+  false
+);
+
 </script>
 
 </html>
