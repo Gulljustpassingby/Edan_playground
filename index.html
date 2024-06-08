@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edan_playground</title>
     <link rel="stylesheet" href="main.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
 </head>
 <body>
     <div class="warp">
@@ -14,20 +12,22 @@
             <img src="Source/Logo.png" alt="Logo-main">
         </div>
         <div class="bg-block">
-            <p>test001</p>
+            <p>test002</p>
            <div class="column-1">
             <div class="card-1">
                 <canvas id="Rive_001" width="300" height="300"></canvas>
             </div>
             
-            <div class="Pending">
-                
+            <div class="Pending">  
             </div> 
 
         
            </div>
     
+           <script src="https://unpkg.com/@rive-app/canvas@2.16.0"></script>
            <script>
+            const card = document.querySelector("div")
+
            const r = new rive.Rive({
                src: "riv/double-tap.riv",
                canvas: document.getElementById("Rive_001"),
