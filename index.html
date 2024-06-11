@@ -7,22 +7,19 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <div class="Logo-area">
+      <div class="logo">
+        <img src="Source/Logo.png" id="logo">
+      </div>
+    </div>
     <div class="warp">
-        <div class="Logo-area">
-            <img src="Source/Logo.png" alt="Logo-main">
+      <div class="column-1">
+        <div class="card-1">
+            <canvas id="Rive_001" width="300" height="300"></canvas>
         </div>
-        <div class="bg-block">
-           <div class="column-1">
-            <div class="card-1">
-                <canvas id="Rive_001" width="300" height="300"></canvas>
-            </div>
-            
-            <div class="Pending">  
-            </div> 
-       
-           </div>
-           <p>test888</p>
-
+        
+        <div class="Pending">  
+        </div> 
 
         </div>
 
@@ -44,7 +41,7 @@ const r = new rive.Rive({
 });
 
 window.addEventListener(
-  "resize",
+  "listener_card-1",
   () => {
     riveInstance.resizeDrawingSurfaceToCanvas();
   },
