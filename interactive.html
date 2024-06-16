@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edan_playground</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="warper">
+
+    <div class="nav-bar">
+      
+      <div class="Logo">
+        <a>LOGO</a>
+      </div>  
+  
+      <div class="bar">
+        <a href="motion.html">Motion</a>
+        <a href="interactive.html">Interactive</a>
+        <a href="playground.html">Playground</a>
+        <a href="doodle.html">Doodle</a>
+        <a href="about.html">About</a>  
+      </div>  
+
+    </div>
+
+  
+    <div class="Logo-area">
+      <div class="logo">
+        <img src="Source/Logo.png" id="logo">
+      </div>
+    </div>
+    <div class="warp">
+      <div class="column-1">
+        <div class="card-1">
+            <canvas id="Rive_001" width="300" height="300"></canvas>
+        </div>
+        
+        <div class="Pending">  
+        </div> 
+
+        </div>
+
+    </div>
+</body>
+<script src="https://unpkg.com/rive-js"></script>
+<script src="https://unpkg.com/@rive-app/canvas@2.16.0"></script>
+<script>
+ const card = document.querySelector("div.card-1")
+
+const r = new rive.Rive({
+    src: "double-tap.riv",
+    canvas: document.getElementById("Rive_001"),
+    autoplay: true,
+    stateMachines: "State Machine 1",
+    onLoad: () => {
+      r.resizeDrawingSurfaceToCanvas();
+    },
+});
+
+window.addEventListener(
+  "resize",
+  () => {
+    riveInstance.resizeDrawingSurfaceToCanvas();
+  },
+  false
+);
+
+</script>
+
+</html>
